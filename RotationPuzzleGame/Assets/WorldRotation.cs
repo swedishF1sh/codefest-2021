@@ -19,6 +19,6 @@ public class WorldRotation : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
             transform.Rotate(0, 0, 1);
         if (Input.GetKey(KeyCode.DownArrow))
-            transform.Rotate(1, 0, -1);
+            transform.Rotate(0, 0, -1);
     }
 }
