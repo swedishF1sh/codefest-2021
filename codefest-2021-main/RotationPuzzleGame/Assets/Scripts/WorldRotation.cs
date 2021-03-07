@@ -23,6 +23,7 @@ public class WorldRotation : MonoBehaviour
             targetRotation.z -= increment;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
+<<<<<<< HEAD:codefest-2021-main/RotationPuzzleGame/Assets/Scripts/WorldRotation.cs
 <<<<<<< HEAD:RotationPuzzleGame/Assets/WorldRotation.cs
             targetRotation.z += increment;
         }
@@ -34,10 +35,16 @@ public class WorldRotation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
             targetRotation.x -= increment;
 >>>>>>> b710d6b800703a4c9ab751fb703eed33bf30defd:codefest-2021-main/RotationPuzzleGame/Assets/Scripts/WorldRotation.cs
+=======
+            targetRotation.y += increment;
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            targetRotation.y -= increment;
+>>>>>>> parent of 54a9620 (f):RotationPuzzleGame/Assets/WorldRotation.cs
         }
 
         //rotate
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationTime * Time.deltaTime);
-       
+
     }
 }
