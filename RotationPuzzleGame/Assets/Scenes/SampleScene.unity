@@ -223,6 +223,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -6093592463355912122, guid: c6a7757a8c54d644a824b49911b835c7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdeb45860c8ef3e47b1a4084ecd5eb67, type: 2}
     - target: {fileID: -4683669308469848369, guid: c6a7757a8c54d644a824b49911b835c7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1339,9 +1344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 1495203015}
   increment: 45
-  rotationVelocity: {x: 0, y: 0, z: 0}
-  firstpos: {x: 0, y: 0, z: 0, w: 0}
-  secondpos: {x: 0.14519387, y: 0.11141107, z: 0.11141106, w: 0.9767773}
+  targetRotation: {x: 0, y: 0, z: 0}
+  rotationTime: 5
 --- !u!1 &1793250549
 GameObject:
   m_ObjectHideFlags: 0
