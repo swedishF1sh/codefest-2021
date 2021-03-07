@@ -1340,6 +1340,8 @@ MonoBehaviour:
   transform: {fileID: 1495203015}
   increment: 45
   rotationVelocity: {x: 0, y: 0, z: 0}
+  firstpos: {x: 0, y: 0, z: 0, w: 0}
+  secondpos: {x: 0.14519387, y: 0.11141107, z: 0.11141106, w: 0.9767773}
 --- !u!1 &1793250549
 GameObject:
   m_ObjectHideFlags: 0

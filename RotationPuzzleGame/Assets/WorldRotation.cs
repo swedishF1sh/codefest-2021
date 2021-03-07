@@ -9,22 +9,39 @@ public class WorldRotation : MonoBehaviour
     public float increment = 45f;
     public Vector3 rotationVelocity;
 
+    public Vector3 targetRotation;
+    public float rotationTime = 1f;
+
+    bool isRotating = false;
+
+    public Vector3 previousRotation;
+    public Vector3 currentRotation;
+    
+
+
+
    
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            transform.Rotate(1, 0, 0);
+            targetRotation.x += increment;
         }
-        if (Input.GetKey(KeyCode.RightArrow)) {
-            transform.Rotate(-1, 0, 0);
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            targetRotation.x -= increment;
         }
-        if (Input.GetKey(KeyCode.UpArrow)) {
-            transform.Rotate(0, 0, 1);
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            targetRotation.y += increment;
         }
-        if (Input.GetKey(KeyCode.DownArrow)) {
-            transform.Rotate(0, 0, -1);
+        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            targetRotation.y -= increment;
         }
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationTime * Time.deltaTime);
+
     }
 }
+
+//when key is pressed, increase rotation velocity to a certain amount and decrease that velocity over time such that a total of 45 degrees is rotated
