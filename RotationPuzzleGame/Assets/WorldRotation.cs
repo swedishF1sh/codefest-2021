@@ -33,14 +33,14 @@ public class WorldRotation : MonoBehaviour
             targetRotation.x -= increment;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            targetRotation.z += increment;
+            targetRotation.y += increment;
         }
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            targetRotation.z -= increment;
+            targetRotation.y -= increment;
         }
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationTime * Time.deltaTime);
-       
+
     }
 }
 
