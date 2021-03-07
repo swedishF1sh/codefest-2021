@@ -11,15 +11,6 @@ public class WorldRotation : MonoBehaviour
 
     public Vector3 targetRotation;
     public float rotationTime = 1f;
-
-    bool isRotating = false;
-
-    public Vector3 previousRotation;
-    public Vector3 currentRotation;
-    
-
-
-
    
 
     // Update is called once per frame
@@ -37,6 +28,12 @@ public class WorldRotation : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
             targetRotation.y -= increment;
+        }
+
+        if (Input.GetKeyDown(KeyCode.R)) {
+            targetRotation.x = 0;
+            targetRotation.y = 0;
+            targetRotation.z = 0;
         }
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationTime * Time.deltaTime);

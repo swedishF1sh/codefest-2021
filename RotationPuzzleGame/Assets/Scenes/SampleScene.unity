@@ -1552,9 +1552,7 @@ MonoBehaviour:
   increment: 45
   rotationVelocity: {x: 0, y: 0, z: 0}
   targetRotation: {x: 0, y: 0, z: 0}
-  rotationTime: 1
-  previousRotation: {x: 0, y: 0, z: 0}
-  currentRotation: {x: 0, y: 0, z: 0}
+  rotationTime: 5
 --- !u!1 &1719195877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5f2df0f22d3c0b44ca1bfebadd55a998, type: 3}
+  m_Texture: {fileID: 2800000, guid: a3c62735e0976ef4d8229befde3504b7, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
