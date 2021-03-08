@@ -18,10 +18,10 @@ public class WorldRotation : MonoBehaviour
     {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            targetRotation.x += increment;
+            targetRotation.x -= increment;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            targetRotation.x -= increment;
+            targetRotation.x += increment;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
             targetRotation.z += increment;
