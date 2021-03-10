@@ -689,7 +689,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
+  environment: {fileID: 1495203014}
+  rigidbody: {fileID: 259122052}
   thrust: 0
+  range: 4
 --- !u!1 &295339500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8343248219658952724, guid: c6a7757a8c54d644a824b49911b835c7,
@@ -723,7 +726,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
+  environment: {fileID: 1495203014}
+  rigidbody: {fileID: 342982351}
   thrust: 0
+  range: 4
 --- !u!54 &342982351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -767,7 +773,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
-  thrust: 10
+  environment: {fileID: 1495203014}
+  rigidbody: {fileID: 412029020}
+  thrust: 0
+  range: 4
 --- !u!54 &412029020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1546,6 +1555,7 @@ GameObject:
   - component: {fileID: 1404976980}
   - component: {fileID: 1404976979}
   - component: {fileID: 1404976982}
+  - component: {fileID: 1404976983}
   m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
@@ -1643,6 +1653,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1404976983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404976977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 946531353}
+  environment: {fileID: 1495203014}
+  rigidbody: {fileID: 1404976982}
+  thrust: 0
+  range: 4
 --- !u!1 &1495203014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,7 +1845,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 46
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
