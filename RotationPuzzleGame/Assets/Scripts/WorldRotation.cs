@@ -10,7 +10,7 @@ public class WorldRotation : MonoBehaviour
     public Vector3 rotationVelocity;
 
     public Vector3 targetRotation;
-    public float rotationTime = 1f;
+    public float rotationSpeed = 1f;
    
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class WorldRotation : MonoBehaviour
             targetRotation.z = 0;
         }
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationTime * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), rotationSpeed * Time.deltaTime);
 
     }
 }
