@@ -2151,7 +2151,7 @@ MonoBehaviour:
   increment: 45
   rotationVelocity: {x: 0, y: 0, z: 0}
   targetRotation: {x: 0, y: 0, z: 0}
-  rotationTime: 5
+  rotationSpeed: 2
 --- !u!1 &1719195877
 GameObject:
   m_ObjectHideFlags: 0
