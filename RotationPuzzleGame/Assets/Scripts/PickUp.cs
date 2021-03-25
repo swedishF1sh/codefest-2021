@@ -24,6 +24,7 @@ public class PickUp : MonoBehaviour
 
         if(Vector3.Distance(this.transform.position, destination.position) <= range) {
             GetComponent<Rigidbody>().useGravity = false;
+           
             this.transform.position = destination.position;
             this.transform.parent = GameObject.Find("Destination").transform;
         }
@@ -40,6 +41,7 @@ public class PickUp : MonoBehaviour
 
         this.transform.parent = environment.transform;
         GetComponent<Rigidbody>().useGravity = true;
+        
         this.GetComponent<Rigidbody>().AddForce(-transform.right * thrust);
     }
 
