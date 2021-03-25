@@ -996,6 +996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1853457526}
+  door2: {fileID: 975221808}
 --- !u!4 &460464875 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c6a7757a8c54d644a824b49911b835c7,
@@ -1545,7 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1654005673}
-  mouseSensitivity: 250
+  mouseSensitivity: 150
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,7 +1687,7 @@ GameObject:
   - component: {fileID: 975221811}
   - component: {fileID: 975221810}
   m_Layer: 8
-  m_Name: Cube (4)
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
