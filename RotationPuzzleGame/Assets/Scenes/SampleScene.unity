@@ -2173,7 +2173,7 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 30
+    numCapVertices: 0
     alignment: 0
     textureMode: 3
     shadowBias: 0.5
