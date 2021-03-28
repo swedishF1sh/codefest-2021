@@ -24,7 +24,7 @@ public class PickUp : MonoBehaviour
 
         if(Vector3.Distance(this.transform.position, destination.position) <= range) {
             GetComponent<Rigidbody>().useGravity = false;
-           
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
             this.transform.position = destination.position;
             this.transform.parent = GameObject.Find("Destination").transform;
         }
@@ -38,7 +38,7 @@ public class PickUp : MonoBehaviour
         */
 
         isPickedUp = false;
-
+        rigidbody.constraints = RigidbodyConstraints.None;
         this.transform.parent = environment.transform;
         GetComponent<Rigidbody>().useGravity = true;
         
