@@ -1926,7 +1926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reflections: 20
   maxLength: 100
-  door: {fileID: 0}
+  door: {fileID: 1853457526}
 --- !u!120 &1038764284
 LineRenderer:
   m_ObjectHideFlags: 0
