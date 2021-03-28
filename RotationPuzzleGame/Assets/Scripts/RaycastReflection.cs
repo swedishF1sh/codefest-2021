@@ -10,6 +10,9 @@ public class RaycastReflection : MonoBehaviour
     public int reflections;
     public float maxLength;
 
+    [SerializeField]
+    GameObject door;
+
     private LineRenderer lr;
     private Ray ray;
     private RaycastHit hit;
@@ -39,6 +42,7 @@ public class RaycastReflection : MonoBehaviour
                 ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
                 if (hit.collider.tag != "Mirror")
                     break;
+               
                 else
                 {
                     lr.positionCount++;
@@ -46,5 +50,8 @@ public class RaycastReflection : MonoBehaviour
                 }
             }
         }
+
+
+        
     }
 }
