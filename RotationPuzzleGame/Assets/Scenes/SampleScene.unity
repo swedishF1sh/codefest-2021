@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 259122048}
   - component: {fileID: 259122052}
   - component: {fileID: 259122053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,8 +933,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.1250133, z: -0, w: 0.9921551}
   m_LocalPosition: {x: -12.52, y: 2.4063387, z: 6.71}
   m_LocalScale: {x: 1.5, y: 2.5, z: 0.15}
-  m_Children:
-  - {fileID: 707589617}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -14.363001, z: 0}
@@ -1348,12 +1347,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707589616}
   m_LocalRotation: {x: -0, y: -0.1250133, z: -0, w: 0.9921551}
-  m_LocalPosition: {x: -0.014, y: -0.001, z: -0.84}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0.060801506, y: 0.51083875, z: 0.16890669}
+  m_LocalScale: {x: 1.5, y: 2.5, z: 0.15000002}
   m_Children: []
-  m_Father: {fileID: 355955547}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -14.363001, z: 0}
+  m_Father: {fileID: 1654005673}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!215 &707589618
 ReflectionProbe:
   m_ObjectHideFlags: 0
@@ -1369,8 +1368,8 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 1024
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 18.972986, y: 14.183874, z: 14.918095}
-  m_BoxOffset: {x: -3.166669, y: 2.9886675, z: -2.9459708}
+  m_BoxSize: {x: 31.321533, y: 19.15455, z: 32.04622}
+  m_BoxOffset: {x: -1.9136295, y: 4.1258097, z: 0.15699387}
   m_NearClip: 0.01
   m_FarClip: 1000
   m_ShadowDistance: 100
@@ -2283,7 +2282,7 @@ GameObject:
   - component: {fileID: 1404976979}
   - component: {fileID: 1404976982}
   - component: {fileID: 1404976983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2625,6 +2624,7 @@ Transform:
   m_Children:
   - {fileID: 1212148076}
   - {fileID: 963194228}
+  - {fileID: 707589617}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3112,7 +3112,7 @@ GameObject:
   - component: {fileID: 342982351}
   - component: {fileID: 342982355}
   - component: {fileID: 342982350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3133,7 +3133,7 @@ GameObject:
   - component: {fileID: 412029020}
   - component: {fileID: 412029024}
   - component: {fileID: 412029019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
