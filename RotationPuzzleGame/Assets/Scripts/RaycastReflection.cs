@@ -36,7 +36,7 @@ public class RaycastReflection : MonoBehaviour
         {
             if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
             {
-                lr.positionCount++;
+                lr.positionCount += 1;
                 lr.SetPosition(lr.positionCount - 1, hit.point);
                 remainingLength -= Vector3.Distance(ray.origin, hit.point);
                 ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
@@ -53,7 +53,7 @@ public class RaycastReflection : MonoBehaviour
                 }
                 else
                 {
-                    lr.positionCount++;
+                    lr.positionCount += 1;
                     lr.SetPosition(lr.positionCount - 1, ray.origin + ray.direction * remainingLength);
                 }
             }
