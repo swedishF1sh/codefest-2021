@@ -51,11 +51,7 @@ public class RaycastReflection : MonoBehaviour
                     break;
 
                 }
-                else
-                {
-                    lr.positionCount += 1;
-                    lr.SetPosition(lr.positionCount - 1, ray.origin + ray.direction * remainingLength);
-                }
+                
             }
         }
 
