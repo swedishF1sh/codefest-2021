@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
     public float thrust;
     public float range = 5;
 
-    bool isPickedUp;
+    public bool isPickedUp;
     
     void OnMouseDown()
     {

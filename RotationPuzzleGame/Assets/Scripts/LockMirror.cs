@@ -57,5 +57,15 @@ public class LockMirror : MonoBehaviour
             }
 
         }
+        if (Physics.Raycast(player.transform.position, camera.transform.forward, out hit, 3))
+        {
+            if(hit.collider.gameObject.GetComponent<PickUp>() != null)
+            {
+                if (hit.collider.gameObject.GetComponent<PickUp>().isPickedUp == true)
+                    Unlock(hit.collider.gameObject.GetComponent<Rigidbody>());
+            }
+        }
+
+
     }
 }
