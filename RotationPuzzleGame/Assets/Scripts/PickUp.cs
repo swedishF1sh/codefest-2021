@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PickUp : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class PickUp : MonoBehaviour
     
     void OnMouseDown()
     {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         /*
         rigidbody.isKinematic = true;
         rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
