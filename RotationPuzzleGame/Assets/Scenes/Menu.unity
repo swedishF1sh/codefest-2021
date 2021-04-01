@@ -1479,7 +1479,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 461, y: 259}
-  m_SizeDelta: {x: 181.49762, y: 46.923416}
+  m_SizeDelta: {x: 250, y: 46.923416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &726803540
 Animator:
@@ -1532,9 +1532,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'fuck off
-
-'
+  m_Text: don't waste your time
 --- !u!222 &726803542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1612,7 +1610,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'yes
+  m_Text: 'game
 
 '
 --- !u!222 &728710444
