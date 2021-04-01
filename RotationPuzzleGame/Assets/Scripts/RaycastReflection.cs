@@ -40,9 +40,12 @@ public class RaycastReflection : MonoBehaviour
                 lr.SetPosition(lr.positionCount - 1, hit.point);
                 remainingLength -= Vector3.Distance(ray.origin, hit.point);
                 ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
-               
-               if (hit.collider.tag == "Sensor")
+
+                if (hit.collider.tag == "Sensor")
+                {
                     door.SetActive(false);
+                    
+                }
                 if (hit.collider.tag != "Sensor")
                     door.SetActive(true);
                 if (hit.collider.tag != "Mirror")
