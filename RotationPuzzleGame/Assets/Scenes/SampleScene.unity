@@ -805,9 +805,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 919132148978376081}
   rigidbody: {fileID: 342982351}
   thrust: 0
   range: 2
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 342982355}
   isPickedUp: 0
 --- !u!54 &342982351
 Rigidbody:
@@ -965,9 +968,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 355955543}
   rigidbody: {fileID: 355955548}
   thrust: 0
   range: 5
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 355955544}
   isPickedUp: 0
 --- !u!114 &355955550
 MonoBehaviour:
@@ -1152,9 +1158,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 0}
   rigidbody: {fileID: 412029020}
   thrust: 0
   range: 2
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 412029024}
   isPickedUp: 0
 --- !u!54 &412029020
 Rigidbody:
@@ -1870,9 +1879,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 861975202}
   rigidbody: {fileID: 861975205}
   thrust: 0
   range: 5
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 861975207}
   isPickedUp: 0
 --- !u!65 &861975207
 BoxCollider:
@@ -3002,9 +3014,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 1404976977}
   rigidbody: {fileID: 1404976982}
   thrust: 0
   range: 2
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 1404976979}
   isPickedUp: 0
 --- !u!1 &1430617180
 GameObject:
@@ -3091,9 +3106,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
+  item: {fileID: 1430617180}
   rigidbody: {fileID: 1430617183}
   thrust: 0
   range: 5
+  envCollider: {fileID: 798843814}
+  itemCollider: {fileID: 1430617185}
   isPickedUp: 0
 --- !u!65 &1430617185
 BoxCollider:
