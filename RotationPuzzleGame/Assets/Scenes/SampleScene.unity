@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
-  item: {fileID: 0}
+  item: {fileID: 919132149616569593}
   rigidbody: {fileID: 412029020}
   thrust: 0
   range: 2
