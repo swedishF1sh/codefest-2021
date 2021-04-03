@@ -10,8 +10,9 @@ public class GameManager : MonoBehaviour
 
    
     public bool isPaused = false;
-
+    public bool isInOptions = false;
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
 
     public GameObject camera;
 
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
         {
             isPaused = false;
             pauseMenu.SetActive(false);
+            optionsMenu.SetActive(false);
             Time.timeScale = 1f;
             camera.GetComponent<CameraMovement>().enabled = true;
         }
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused = false;
         pauseMenu.SetActive(false);
+        optionsMenu.SetActive(false);
         Time.timeScale = 1f;
         camera.GetComponent<CameraMovement>().enabled = true;
     }
@@ -80,7 +83,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-
+    
 
     
 
