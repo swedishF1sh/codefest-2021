@@ -17,6 +17,11 @@ public class PickUp : MonoBehaviour
 
     public bool isPickedUp;
     
+
+
+   
+
+
     void OnMouseDown()
     {
 
