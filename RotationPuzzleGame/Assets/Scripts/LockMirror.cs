@@ -56,7 +56,7 @@ public class LockMirror : MonoBehaviour
     void Update()
     {
 
-
+        
         
         if (Physics.Raycast(player.transform.position, camera.transform.forward, out hit, 3))
         {
@@ -67,7 +67,7 @@ public class LockMirror : MonoBehaviour
                 zVelocity = hit.collider.gameObject.GetComponent<Rigidbody>().velocity.z;
             }
 
-            if (hit.collider.tag == "Mirror" && Mathf.Abs(xVelocity) < 0.5 && Mathf.Abs(yVelocity) < 0.5 && Mathf.Abs(zVelocity) < 0.5)
+            if (hit.collider.tag == "Mirror" && Mathf.Abs(xVelocity) < 0.5 && Mathf.Abs(yVelocity) < 0.5 && Mathf.Abs(zVelocity) < 0.5 && hit.collider.gameObject.GetComponent<PickUp>().isPickedUp == false)
             {
 
                 if (locked == false)

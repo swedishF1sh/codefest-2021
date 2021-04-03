@@ -33,7 +33,7 @@ public class PickUp : MonoBehaviour
         rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         */
 
-        isPickedUp = false;
+        isPickedUp = true;
         if(Vector3.Distance(this.transform.position, destination.position) <= range) {
 
             GetComponent<Rigidbody>().useGravity = false;
