@@ -82,7 +82,7 @@ public class PickUp : MonoBehaviour
                 GetComponent<Rigidbody>().useGravity = false;
                 GetComponent<Rigidbody>().isKinematic = true;
                 //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-                Physics.IgnoreCollision(playerCollider, itemCollider);
+                //Physics.IgnoreCollision(playerCollider, itemCollider);
 
 
 
