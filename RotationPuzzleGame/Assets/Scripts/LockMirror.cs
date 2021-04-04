@@ -8,7 +8,7 @@ public class LockMirror : MonoBehaviour
    
     public Transform player;
     public Transform camera;
-    private bool locked = false;
+    public bool locked = false;
     public Text LockSign;
     public Text UnlockSign;
 
@@ -28,7 +28,7 @@ public class LockMirror : MonoBehaviour
     public GameObject[] mirrors;
     public void Lock(Rigidbody item)
     {
-        item.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+        //item.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         item.isKinematic = true;
        
         locked = true;
@@ -37,7 +37,7 @@ public class LockMirror : MonoBehaviour
 
     public void Unlock(Rigidbody item)
     {
-        item.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        //item.collisionDetectionMode = CollisionDetectionMode.Continuous;
         
         item.isKinematic = false;
         item.WakeUp();
@@ -116,9 +116,15 @@ public class LockMirror : MonoBehaviour
                 {
                     timer = 0;
                     if (locked == false)
+                    {
                         Lock(hit.collider.gameObject.GetComponent<Rigidbody>());
+                        hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                    }
                     else
+                    {
                         Unlock(hit.collider.gameObject.GetComponent<Rigidbody>());
+                        hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                    }
                 }
             }
             if (Physics.Raycast(player.transform.position, camera.transform.forward, out hit, 3))

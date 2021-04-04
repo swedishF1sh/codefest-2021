@@ -60,18 +60,20 @@ public class PickUp : MonoBehaviour
     
     void Update()
     {
-        
+
         if (isPickedUp == false)
         {
-            itemCollider.isTrigger = false;
-            //rigidbody.constraints = RigidbodyConstraints.None;
-            this.transform.parent = environment.transform;
+            if (item.GetComponent<LockMirror>().locked == false) { 
 
-            GetComponent<Rigidbody>().useGravity = true;
+                itemCollider.isTrigger = false;
+                    rigidbody.constraints = RigidbodyConstraints.None;
+                    this.transform.parent = environment.transform;
 
-            GetComponent<Rigidbody>().isKinematic = false;
+                    GetComponent<Rigidbody>().useGravity = true;
 
+                    GetComponent<Rigidbody>().isKinematic = false;
 
+            }
             //this.GetComponent<Rigidbody>().AddForce(-transform.right * thrust);
         }
         else {
@@ -79,11 +81,12 @@ public class PickUp : MonoBehaviour
             if (Vector3.Distance(this.transform.position, destination.position) <= range)
             {
 
-                GetComponent<Rigidbody>().useGravity = false;
-                GetComponent<Rigidbody>().isKinematic = true;
-                //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                
+                
                 Physics.IgnoreCollision(playerCollider, itemCollider);
+                GetComponent<Rigidbody>().useGravity = false;
 
+                GetComponent<Rigidbody>().isKinematic = true;
 
 
                 this.transform.position = destination.position;
@@ -104,7 +107,7 @@ public class PickUp : MonoBehaviour
     void OnTriggerExit(Collider exitCol)
     {
         onTrigger = false;
-        
-        
+        rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+
     }
 }
