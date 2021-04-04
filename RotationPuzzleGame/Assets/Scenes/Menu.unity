@@ -352,7 +352,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325195753}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -365,7 +365,9 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!64 &325195755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -707,7 +709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438645113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -720,7 +722,9 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!54 &438645116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1439,7 +1443,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710348706}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -1452,7 +1456,9 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!64 &710348709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2355,7 +2361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133213438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -2368,7 +2374,9 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!64 &1133213441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2800,7 +2808,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444114417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -2813,7 +2821,9 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!64 &1444114419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3973,7 +3983,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939395475}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -3986,7 +3996,9 @@ MonoBehaviour:
   range: 5
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
+  playerCollider: {fileID: 0}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!65 &1939395479
 BoxCollider:
   m_ObjectHideFlags: 0
