@@ -16,12 +16,8 @@ public class PickUp : MonoBehaviour
     public Collider envCollider, itemCollider;
 
     public bool isPickedUp;
-    
-
-
-   
-
-
+    private Vector3 oldPos;
+    public bool onTrigger = false;
     void OnMouseDown()
     {
 
@@ -34,18 +30,7 @@ public class PickUp : MonoBehaviour
         */
 
         isPickedUp = true;
-        if(Vector3.Distance(this.transform.position, destination.position) <= range) {
-
-            GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<Rigidbody>().isKinematic = true;
-            //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-
-
-
-
-            this.transform.position = destination.position;
-            this.transform.parent = GameObject.Find("Destination").transform;
-        }
+        
     }
 
 
@@ -59,25 +44,65 @@ public class PickUp : MonoBehaviour
         */
         
         isPickedUp = false;
-
         
-        //envCollider = environment.GetComponent<Collider>();
-        //itemCollider = item.GetComponent<Collider>();
-        //Vector3 closestPoint = envCollider.ClosestPointOnBounds(destination.position);
-        //float distance = Vector3.Distance(closestPoint, destination.position);
         
-        //rigidbody.constraints = RigidbodyConstraints.None;
-        this.transform.parent = environment.transform;
-
-        GetComponent<Rigidbody>().useGravity = true;
-
-        GetComponent<Rigidbody>().isKinematic = false;
-
-
-        this.GetComponent<Rigidbody>().AddForce(-transform.right * thrust);
+        
+     
+        
+    
         
     }
     
+    void Update()
+    {
+        
+        if (isPickedUp == false)
+        {
+            itemCollider.isTrigger = false;
+            //rigidbody.constraints = RigidbodyConstraints.None;
+            this.transform.parent = environment.transform;
 
-    
+            GetComponent<Rigidbody>().useGravity = true;
+
+            GetComponent<Rigidbody>().isKinematic = false;
+
+
+            //this.GetComponent<Rigidbody>().AddForce(-transform.right * thrust);
+        }
+        else {
+            itemCollider.isTrigger = true;
+            if (Vector3.Distance(this.transform.position, destination.position) <= range)
+            {
+
+                GetComponent<Rigidbody>().useGravity = false;
+                GetComponent<Rigidbody>().isKinematic = true;
+                //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+
+
+
+
+                this.transform.position = destination.position;
+                this.transform.parent = GameObject.Find("Destination").transform;
+            }
+        }
+        if(onTrigger == false)
+            oldPos = transform.position;
+
+    }
+    void OnTriggerEnter(Collider col )
+    {
+        onTrigger = true;
+        transform.position = oldPos;
+        if (isPickedUp == true)
+        {
+            isPickedUp = true;
+            
+        }
+    }
+    void OnTriggerExit(Collider exitCol)
+    {
+        onTrigger = false;
+        isPickedUp = false;
+        
+    }
 }

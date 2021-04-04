@@ -956,6 +956,7 @@ MonoBehaviour:
   envCollider: {fileID: 0}
   itemCollider: {fileID: 241406912}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!54 &241406911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1268,6 +1269,7 @@ MonoBehaviour:
   envCollider: {fileID: 0}
   itemCollider: {fileID: 342982355}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!54 &342982351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1697,6 +1699,7 @@ MonoBehaviour:
   envCollider: {fileID: 0}
   itemCollider: {fileID: 412029024}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!54 &412029020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4894,6 +4897,7 @@ MonoBehaviour:
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1430617185}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!65 &1430617185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6192,6 +6196,7 @@ MonoBehaviour:
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1769450524}
   isPickedUp: 0
+  onTrigger: 0
 --- !u!1 &1825791618
 GameObject:
   m_ObjectHideFlags: 0
