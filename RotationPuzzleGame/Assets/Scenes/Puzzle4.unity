@@ -955,7 +955,6 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 241406912}
-  playerCollider: {fileID: 1654005670}
   isPickedUp: 0
   onTrigger: 0
 --- !u!54 &241406911
@@ -1269,7 +1268,6 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 342982355}
-  playerCollider: {fileID: 1654005670}
   isPickedUp: 0
   onTrigger: 0
 --- !u!54 &342982351
@@ -1700,7 +1698,6 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 412029024}
-  playerCollider: {fileID: 1654005670}
   isPickedUp: 0
   onTrigger: 0
 --- !u!54 &412029020
@@ -4899,7 +4896,6 @@ MonoBehaviour:
   range: 5
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1430617185}
-  playerCollider: {fileID: 1654005670}
   isPickedUp: 0
   onTrigger: 0
 --- !u!65 &1430617185
@@ -6199,7 +6195,6 @@ MonoBehaviour:
   range: 2
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1769450524}
-  playerCollider: {fileID: 1654005670}
   isPickedUp: 0
   onTrigger: 0
 --- !u!1 &1825791618
