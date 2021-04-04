@@ -15,6 +15,8 @@ public class PickUp : MonoBehaviour
 
     public Collider envCollider, itemCollider;
 
+    public Collider playerCollider;
+
     public bool isPickedUp;
     private Vector3 oldPos;
     public bool onTrigger = false;
@@ -80,7 +82,7 @@ public class PickUp : MonoBehaviour
                 GetComponent<Rigidbody>().useGravity = false;
                 GetComponent<Rigidbody>().isKinematic = true;
                 //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-
+                Physics.IgnoreCollision(playerCollider, itemCollider);
 
 
 
