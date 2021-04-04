@@ -63,7 +63,9 @@ public class PickUp : MonoBehaviour
 
         if (isPickedUp == false)
         {
-            if (item.GetComponent<LockMirror>().locked == false) { 
+            
+                
+            if (item.GetComponent<LockMirror>() == null || item.GetComponent<LockMirror>().locked == false) { 
 
                 itemCollider.isTrigger = false;
                     rigidbody.constraints = RigidbodyConstraints.None;
