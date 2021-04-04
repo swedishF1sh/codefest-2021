@@ -13,7 +13,7 @@ public class PickUp : MonoBehaviour
     public float thrust;
     public float range = 5;
 
-    
+    public Collider envCollider, itemCollider;
 
     public bool isPickedUp;
     
@@ -38,7 +38,7 @@ public class PickUp : MonoBehaviour
 
             GetComponent<Rigidbody>().useGravity = false;
             rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-            
+
 
             this.transform.position = destination.position;
             this.transform.parent = GameObject.Find("Destination").transform;
@@ -57,14 +57,13 @@ public class PickUp : MonoBehaviour
         
         isPickedUp = false;
 
-
+        
         //envCollider = environment.GetComponent<Collider>();
         //itemCollider = item.GetComponent<Collider>();
         //Vector3 closestPoint = envCollider.ClosestPointOnBounds(destination.position);
         //float distance = Vector3.Distance(closestPoint, destination.position);
-
+        
         rigidbody.constraints = RigidbodyConstraints.None;
-        //rigidbody.enabled = true;
         this.transform.parent = environment.transform;
 
         GetComponent<Rigidbody>().useGravity = true;
