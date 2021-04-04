@@ -37,7 +37,10 @@ public class PickUp : MonoBehaviour
         if(Vector3.Distance(this.transform.position, destination.position) <= range) {
 
             GetComponent<Rigidbody>().useGravity = false;
-            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            GetComponent<Rigidbody>().isKinematic = true;
+            //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+
+
 
 
             this.transform.position = destination.position;
@@ -63,10 +66,13 @@ public class PickUp : MonoBehaviour
         //Vector3 closestPoint = envCollider.ClosestPointOnBounds(destination.position);
         //float distance = Vector3.Distance(closestPoint, destination.position);
         
-        rigidbody.constraints = RigidbodyConstraints.None;
+        //rigidbody.constraints = RigidbodyConstraints.None;
         this.transform.parent = environment.transform;
 
         GetComponent<Rigidbody>().useGravity = true;
+
+        GetComponent<Rigidbody>().isKinematic = false;
+
 
         this.GetComponent<Rigidbody>().AddForce(-transform.right * thrust);
         

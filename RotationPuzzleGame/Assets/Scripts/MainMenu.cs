@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject loadingScreen;
 
-    public string firstLevel = "SampleScene";
+    public string firstLevel = "Puzzle1";
 
 
     public void LoadFirst()

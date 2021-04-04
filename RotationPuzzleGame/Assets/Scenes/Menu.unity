@@ -499,7 +499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427291296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e79723dd690e8144be3da129e00de1e, type: 3}
   m_Name: 
@@ -507,7 +507,7 @@ MonoBehaviour:
   reflections: 3
   maxLength: 100
   door: {fileID: 755721254}
-  door2: {fileID: 0}
+  door2: {fileID: 1791715358}
 --- !u!120 &427291299
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3756,8 +3756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reflections: 3
   maxLength: 100
-  door: {fileID: 0}
-  door2: {fileID: 0}
+  door: {fileID: 755721254}
+  door2: {fileID: 1791715358}
 --- !u!120 &1852099861
 LineRenderer:
   m_ObjectHideFlags: 0
