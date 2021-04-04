@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
     public GameObject item;
     public Rigidbody rigidbody;
     public float thrust;
-    public float range = 5;
+    public float range = 2;
 
     public Collider envCollider, itemCollider;
 
@@ -93,6 +93,7 @@ public class PickUp : MonoBehaviour
     {
         onTrigger = true;
         transform.position = oldPos;
+       
         if (isPickedUp == true)
         {
             isPickedUp = true;
@@ -102,7 +103,7 @@ public class PickUp : MonoBehaviour
     void OnTriggerExit(Collider exitCol)
     {
         onTrigger = false;
-        isPickedUp = false;
+        
         
     }
 }
