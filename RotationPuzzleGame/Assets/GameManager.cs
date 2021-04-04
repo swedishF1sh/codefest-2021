@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
    
     public bool isPaused = false;
     public bool isInOptions = false;
+    public GameObject crosshair;
     public GameObject pauseMenu;
     public GameObject optionsMenu;
 
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
         {
             isPaused = false;
             pauseMenu.SetActive(false);
+            crosshair.SetActive(true);
             optionsMenu.SetActive(false);
             Time.timeScale = 1f;
             camera.GetComponent<CameraMovement>().enabled = true;
