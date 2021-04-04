@@ -2461,6 +2461,7 @@ MonoBehaviour:
   reflections: 10
   maxLength: 100
   door: {fileID: 1496787080}
+  door2: {fileID: 583829637}
 --- !u!120 &608294978
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4590,6 +4591,7 @@ MonoBehaviour:
   reflections: 10
   maxLength: 100
   door: {fileID: 84563309}
+  door2: {fileID: 0}
 --- !u!120 &1465095749
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5988,7 +5990,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 556804337}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.81333333
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

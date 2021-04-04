@@ -11,7 +11,8 @@ public class RaycastReflection : MonoBehaviour
     public float maxLength;
 
     [SerializeField]
-    GameObject door;
+    public GameObject door;
+    public GameObject door2;
 
     private LineRenderer lr;
     private Ray ray;
@@ -44,10 +45,14 @@ public class RaycastReflection : MonoBehaviour
                 if (hit.collider.tag == "Sensor")
                 {
                     door.SetActive(false);
+                    door2.SetActive(true);
                     
                 }
                 if (hit.collider.tag != "Sensor")
+                {
                     door.SetActive(true);
+                    door2.SetActive(false);
+                }
                 if (hit.collider.tag != "Mirror")
                 {
 
