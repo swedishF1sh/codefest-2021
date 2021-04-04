@@ -11,13 +11,16 @@ public class PickUp : MonoBehaviour
     public GameObject item;
     public Rigidbody rigidbody;
     public float thrust;
-    public float range = 2;
+    public float range = 5;
 
     public Collider envCollider, itemCollider;
 
     public bool isPickedUp;
     private Vector3 oldPos;
     public bool onTrigger = false;
+
+
+ 
     void OnMouseDown()
     {
 
@@ -93,12 +96,8 @@ public class PickUp : MonoBehaviour
     {
         onTrigger = true;
         transform.position = oldPos;
-       
-        if (isPickedUp == true)
-        {
-            isPickedUp = true;
-            
-        }
+        isPickedUp = false;
+
     }
     void OnTriggerExit(Collider exitCol)
     {
