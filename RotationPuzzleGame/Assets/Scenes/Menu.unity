@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 1524114259}
-  firstLevel: SampleScene
+  firstLevel: Puzzle1
 --- !u!1 &325195753
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,9 +359,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 0}
+  item: {fileID: 0}
   rigidbody: {fileID: 325195756}
   thrust: 0
   range: 2
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!64 &325195755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -503,6 +507,7 @@ MonoBehaviour:
   reflections: 3
   maxLength: 100
   door: {fileID: 755721254}
+  door2: {fileID: 0}
 --- !u!120 &427291299
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -709,9 +714,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 205010111}
+  item: {fileID: 0}
   rigidbody: {fileID: 438645116}
   thrust: 0
   range: 2
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!54 &438645116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1437,9 +1446,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 205010111}
+  item: {fileID: 0}
   rigidbody: {fileID: 710348710}
   thrust: 0
   range: 2
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!64 &710348709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2349,9 +2362,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 205010111}
+  item: {fileID: 0}
   rigidbody: {fileID: 1133213442}
   thrust: 0
   range: 2
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!64 &1133213441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2790,9 +2807,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 0}
+  item: {fileID: 0}
   rigidbody: {fileID: 1444114420}
   thrust: 0
   range: 2
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!64 &1444114419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3736,6 +3757,7 @@ MonoBehaviour:
   reflections: 3
   maxLength: 100
   door: {fileID: 0}
+  door2: {fileID: 0}
 --- !u!120 &1852099861
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3958,9 +3980,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   environment: {fileID: 205010111}
+  item: {fileID: 0}
   rigidbody: {fileID: 1939395477}
   thrust: 0
   range: 5
+  envCollider: {fileID: 0}
+  itemCollider: {fileID: 0}
+  isPickedUp: 0
 --- !u!65 &1939395479
 BoxCollider:
   m_ObjectHideFlags: 0
