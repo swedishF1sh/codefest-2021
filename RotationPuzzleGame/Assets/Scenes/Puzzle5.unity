@@ -2635,7 +2635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707589616}
   m_LocalRotation: {x: -0, y: -0.1250133, z: -0, w: 0.9921551}
-  m_LocalPosition: {x: 3.5, y: -2.541, z: 2.117}
+  m_LocalPosition: {x: 9.622, y: -2.541, z: 5.408}
   m_LocalScale: {x: 1.5, y: 2.5, z: 0.15000004}
   m_Children: []
   m_Father: {fileID: 1495203015}
@@ -2656,8 +2656,8 @@ ReflectionProbe:
   m_TimeSlicingMode: 1
   m_Resolution: 1024
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 34.90164, y: 30.489527, z: 33.908257}
-  m_BoxOffset: {x: -3.7036858, y: 5.3097734, z: -0.77402496}
+  m_BoxSize: {x: 55.625843, y: 39.680634, z: 47.479244}
+  m_BoxOffset: {x: 2.2123966, y: 0.71421814, z: -3.0849552}
   m_NearClip: 0.01
   m_FarClip: 1000
   m_ShadowDistance: 100
@@ -2878,6 +2878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527e439330a02d144af2ddcddcb77dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 0}
 --- !u!114 &757528210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5500,6 +5501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1654005673}
   camera: {fileID: 963194228}
+  locked: 0
   LockSign: {fileID: 5134122221545316523, guid: 72f9ede5a4e96bb4a80386b8f3ca6e5a,
     type: 3}
   UnlockSign: {fileID: 9042963978592953465, guid: 9abffeecf5f161f44a2062292c91012e,
