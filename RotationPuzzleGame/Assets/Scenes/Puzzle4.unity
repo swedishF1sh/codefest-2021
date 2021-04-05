@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: a7fbe677f52793f4ba11224eb9a41d60,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3159,8 +3159,8 @@ ReflectionProbe:
   m_TimeSlicingMode: 1
   m_Resolution: 1024
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 34.90164, y: 30.489527, z: 33.908257}
-  m_BoxOffset: {x: -3.7036858, y: 5.3097734, z: -0.77402496}
+  m_BoxSize: {x: 52.399788, y: 51.22449, z: 60.230988}
+  m_BoxOffset: {x: 5.0453873, y: 3.7332687, z: -1.5595808}
   m_NearClip: 0.01
   m_FarClip: 1000
   m_ShadowDistance: 100

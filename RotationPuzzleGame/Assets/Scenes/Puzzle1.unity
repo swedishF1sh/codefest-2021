@@ -1094,6 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527e439330a02d144af2ddcddcb77dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 0}
 --- !u!114 &292464813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,8 +2577,8 @@ ReflectionProbe:
   m_TimeSlicingMode: 1
   m_Resolution: 1024
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 31.321533, y: 19.15455, z: 32.04622}
-  m_BoxOffset: {x: -1.9136295, y: 4.1258097, z: 0.15699387}
+  m_BoxSize: {x: 62.197388, y: 53.72234, z: 65.648026}
+  m_BoxOffset: {x: -1.5863953, y: 3.3107567, z: 2.827343}
   m_NearClip: 0.01
   m_FarClip: 1000
   m_ShadowDistance: 100
@@ -4579,6 +4580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1654005673}
   camera: {fileID: 963194228}
+  locked: 0
   LockSign: {fileID: 5134122221545316523, guid: 72f9ede5a4e96bb4a80386b8f3ca6e5a,
     type: 3}
   UnlockSign: {fileID: 9042963978592953465, guid: 9abffeecf5f161f44a2062292c91012e,
