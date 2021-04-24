@@ -13,6 +13,9 @@ public class PickUp : MonoBehaviour
     public float thrust;
     public float range = 5;
 
+    public int turnSpeed = 20;
+
+
     public Collider envCollider, itemCollider;
 
     public Collider playerCollider;
@@ -29,6 +32,10 @@ public class PickUp : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
+
+        
+        
+
         /*
         rigidbody.isKinematic = true;
         rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
@@ -43,20 +50,20 @@ public class PickUp : MonoBehaviour
 
     void OnMouseUp()
     {
+
+        
         /*
         rigidbody.isKinematic = false;
         rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
         */
-        
+
         isPickedUp = false;
         
-        
-        
-     
-        
-    
-        
     }
+
+
+    
+
     
     void Update()
     {
@@ -94,6 +101,34 @@ public class PickUp : MonoBehaviour
                 this.transform.position = destination.position;
                 this.transform.parent = GameObject.Find("Destination").transform;
             }
+
+
+            //rotation
+            if (Input.GetKey(KeyCode.J))
+            {
+                this.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+            }
+
+            if (Input.GetKey(KeyCode.L))
+            {
+                this.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+            }
+
+            if (Input.GetKey(KeyCode.I))
+            {
+                this.transform.Rotate(Vector3.left, -turnSpeed * Time.deltaTime);
+            }
+
+            if (Input.GetKey(KeyCode.K))
+            {
+                this.transform.Rotate(Vector3.right, -turnSpeed * Time.deltaTime);
+            }
+
+
+
+
+
+
         }
         if(onTrigger == false)
             oldPos = transform.position;

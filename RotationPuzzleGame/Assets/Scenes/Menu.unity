@@ -456,6 +456,9 @@ MonoBehaviour:
   rigidbody: {fileID: 325195756}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -596,7 +599,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340929258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1eeeba3d9b93c2458cf80afa89966c1, type: 3}
   m_Name: 
@@ -634,7 +637,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340929258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -645,6 +648,9 @@ MonoBehaviour:
   rigidbody: {fileID: 340929261}
   thrust: 0
   range: 5
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 340929263}
   playerCollider: {fileID: 0}
@@ -779,6 +785,9 @@ MonoBehaviour:
   rigidbody: {fileID: 390689221}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 390689223}
   playerCollider: {fileID: 0}
@@ -1181,6 +1190,9 @@ MonoBehaviour:
   rigidbody: {fileID: 438645116}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -2418,6 +2430,9 @@ MonoBehaviour:
   rigidbody: {fileID: 710348710}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -3681,6 +3696,9 @@ MonoBehaviour:
   rigidbody: {fileID: 1133213442}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -3986,6 +4004,9 @@ MonoBehaviour:
   rigidbody: {fileID: 1156146608}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1156146607}
   playerCollider: {fileID: 0}
@@ -4550,7 +4571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410537495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aede0f7d2632e844f8521954e5ae7d9d, type: 3}
   m_Name: 
@@ -4561,6 +4582,9 @@ MonoBehaviour:
   rigidbody: {fileID: 1410537499}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1410537498}
   playerCollider: {fileID: 0}
@@ -4682,6 +4706,9 @@ MonoBehaviour:
   rigidbody: {fileID: 1444114420}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -6476,6 +6503,9 @@ MonoBehaviour:
   rigidbody: {fileID: 1939395477}
   thrust: 0
   range: 5
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 0}
   playerCollider: {fileID: 0}
@@ -7163,6 +7193,9 @@ MonoBehaviour:
   rigidbody: {fileID: 2081100980}
   thrust: 0
   range: 2
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
   envCollider: {fileID: 0}
   itemCollider: {fileID: 2081100981}
   playerCollider: {fileID: 0}

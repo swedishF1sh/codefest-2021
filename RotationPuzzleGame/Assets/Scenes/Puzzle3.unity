@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: a7fbe677f52793f4ba11224eb9a41d60,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -938,6 +938,7 @@ MonoBehaviour:
   rigidbody: {fileID: 241406911}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 241406912}
   playerCollider: {fileID: 1654005670}
@@ -1096,6 +1097,7 @@ MonoBehaviour:
   rigidbody: {fileID: 342982351}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 342982355}
   playerCollider: {fileID: 1654005670}
@@ -1478,10 +1480,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
-  item: {fileID: 0}
+  item: {fileID: 919132149616569593}
   rigidbody: {fileID: 412029020}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 412029024}
   playerCollider: {fileID: 1654005670}
@@ -2908,7 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527e439330a02d144af2ddcddcb77dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 0}
+  resolutionDropdown: {fileID: 1769108914}
 --- !u!114 &991739311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4335,6 +4338,7 @@ MonoBehaviour:
   rigidbody: {fileID: 1404976982}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1404976979}
   playerCollider: {fileID: 1654005670}
@@ -4620,6 +4624,7 @@ MonoBehaviour:
   rigidbody: {fileID: 1430617183}
   thrust: 0
   range: 5
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1430617185}
   playerCollider: {fileID: 1654005670}
@@ -6500,6 +6505,7 @@ MonoBehaviour:
   rigidbody: {fileID: 1769450527}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1769450524}
   playerCollider: {fileID: 1654005670}

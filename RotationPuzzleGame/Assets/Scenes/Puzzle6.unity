@@ -773,6 +773,7 @@ MonoBehaviour:
   rigidbody: {fileID: 241406911}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 241406912}
   playerCollider: {fileID: 1654005670}
@@ -1088,6 +1089,7 @@ MonoBehaviour:
   rigidbody: {fileID: 342982351}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 342982355}
   playerCollider: {fileID: 1654005670}
@@ -1215,10 +1217,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 946531353}
   environment: {fileID: 1495203014}
-  item: {fileID: 0}
+  item: {fileID: 919132149616569593}
   rigidbody: {fileID: 412029020}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 412029024}
   playerCollider: {fileID: 1654005670}
@@ -2053,6 +2056,7 @@ MonoBehaviour:
   rigidbody: {fileID: 696525616}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 696525617}
   playerCollider: {fileID: 1654005670}
@@ -2418,7 +2422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527e439330a02d144af2ddcddcb77dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 0}
+  resolutionDropdown: {fileID: 1310855681}
 --- !u!114 &757528210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5087,6 +5091,7 @@ MonoBehaviour:
   rigidbody: {fileID: 1430617183}
   thrust: 0
   range: 5
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1430617185}
   playerCollider: {fileID: 1654005670}
@@ -6400,6 +6405,7 @@ MonoBehaviour:
   rigidbody: {fileID: 1769450527}
   thrust: 0
   range: 2
+  turnSpeed: 20
   envCollider: {fileID: 0}
   itemCollider: {fileID: 1769450524}
   playerCollider: {fileID: 1654005670}
